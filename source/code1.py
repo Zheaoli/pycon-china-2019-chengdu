@@ -12,4 +12,5 @@ def abc():
     except Simple1Exception as e:
         raise Simple2Exception from e
 
+
 abc()

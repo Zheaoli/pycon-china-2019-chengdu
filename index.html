@@ -101,19 +101,23 @@ a = "abcd"
 				<p>还是来个简单的例子</p>
 				<pre class="fragment"><code data-trim class="python">
 class Simple1Exception(Exception):
-	pass
-				
-				
+    pass
+
+
 class Simple2Exception(Exception):
-	pass
-				
-				
+    pass
+
+
 def abc():
-	try:
-		raise Simple1Exception
-	except Simple1Exception as e:
-		raise Simple2Exception
-									
+    try:
+        raise Simple1Exception
+    except Simple1Exception as e:
+        raise Simple2Exception from e
+
+
+abc()
+
+
 					</code></pre>
 			</section>
 			<section>
@@ -126,6 +130,23 @@ def abc():
 					<li class="fragment">更严格的语义</li>
 					<li class="fragment">更合理的设计</li>
 					<li class="fragment">更多能提高生产效率的新特性</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Python 3 给我们带来了什么？：统一的编码</h3>
+				<ul>
+					<li class="fragment">对于字符串与二进制数据的严格的语义区分</li>
+					<li class="fragment">对于 Unicode 更好的支持</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Python 3 给我们带了什么？：更严格的语义</h3>
+				<p class="fragment">还是之前的例子</p>
+				<ul>
+					<li class="fragment">range/xrange 统一为 range</li>
+					<li class="fragment">dict.items() 与 dict.iteritems() 统一为 dict.items()</li>
+					<li class="fragment">dict.keys() 与 dict.iterkeys() 统一为 dict.keys()</li>
+					<li class="fragment">等等</li>
 				</ul>
 			</section>
 		</div>
