@@ -10,7 +10,12 @@
  *********************************************/
 body {
   background: #111;
-  background-color: #111; }
+  background-color: #111;
+ background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-image: url('https://user-images.githubusercontent.com/7054676/67611103-ceb58300-f7c9-11e9-9b1e-de4029bfe301.png');
+}
 
 .reveal {
   font-family: "Open Sans", sans-serif;
