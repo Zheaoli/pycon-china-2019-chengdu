@@ -25,81 +25,81 @@
 </head>
 
 <body>
-<div class="reveal">
-    <div class="slides">
-        <section>
-            <h3>Python 3 之路</h3>
-            <p>
-                <small>by <a href="https://manjusaka.itscoder.com/">李者璈</a> / <a
-                        href="https://github.com/Zheaoli">@Manjusaka</a></small>
-            </p>
-        </section>
-        <section>
-            <h3>自我介绍</h3>
-            <ul>
-                <li class="fragment">目前在饿了么</li>
-                <li class="fragment">热爱 Python， 但是日常工作却在写 Golang/Java</li>
-                <li class="fragment">捕蛇者说主播，https://pythonhunters.com</li>
-                <li class="fragment">博客：https://manjusaka.itscoder.com</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Python 3 之路</h3>
-            <ul>
-                <li class="fragment">Python 2 的历史</li>
-                <li class="fragment">Python 3 给我们带来了什么</li>
-                <li class="fragment">Python 现在还有什么不完善的地方</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Python 2 的历史</h3>
-            <ul class="fragment">
-                <li class="fragment">2.0 发布于 2000 年</li>
-                <li class="fragment">2.2/2.3 2001年/2004年</li>
-                <li class="fragment">PEP 3000 发布于 2006 年</li>
-                <li class="fragment">2.7 发布于2010年</li>
-                <li class="fragment">2020 年 Python 2 结束维护周期</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Python 2 的缺陷</h3>
-            <ul>
-                <li class="fragment">编码的支持</li>
-                <li class="fragment">语义的分歧</li>
-                <li class="fragment">内建系统设计不合理</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Python 2 的缺陷之: 编码问题</h3>
-            <pre><code code data-trim class="python">
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h3>Python 3 之路</h3>
+                <p>
+                    <small>by <a href="https://manjusaka.itscoder.com/">李者璈</a> / <a
+                            href="https://github.com/Zheaoli">@Manjusaka</a></small>
+                </p>
+            </section>
+            <section>
+                <h3>自我介绍</h3>
+                <ul>
+                    <li class="fragment">目前在饿了么</li>
+                    <li class="fragment">热爱 Python， 但是日常工作却在写 Golang/Java</li>
+                    <li class="fragment">捕蛇者说主播，https://pythonhunter.org</li>
+                    <li class="fragment">博客：https://manjusaka.itscoder.com</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Python 3 之路</h3>
+                <ul>
+                    <li class="fragment">Python 2 的历史</li>
+                    <li class="fragment">Python 3 给我们带来了什么</li>
+                    <li class="fragment">Python 现在还有什么不完善的地方</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Python 2 的历史</h3>
+                <ul class="fragment">
+                    <li class="fragment">2.0 发布于 2000 年</li>
+                    <li class="fragment">2.2/2.3 2001年/2004年</li>
+                    <li class="fragment">PEP 3000 发布于 2006 年</li>
+                    <li class="fragment">2.7 发布于2010年</li>
+                    <li class="fragment">2020 年 Python 2 结束维护周期</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Python 2 的缺陷</h3>
+                <ul>
+                    <li class="fragment">编码的支持</li>
+                    <li class="fragment">语义的分歧</li>
+                    <li class="fragment">内建系统设计不合理</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Python 2 的缺陷之: 编码问题</h3>
+                <pre><code code data-trim class="python">
 a = "abcd"
 													</code></pre>
-            <p class="fragment">好了，这段代码代表着什么含义</p>
-            <ul>
-                <li class="fragment">A. 包含了”a”, “b”, “c”, 和 “d” 的字符串</li>
-                <li class="fragment">B: 表示 97, 98, 99, 和 100 的字节数据</li>
-            </ul>
-            <p class="fragment">答案是，以上都可能</p>
-        </section>
-        <section>
-            <h3>Python 2 的缺陷之: 编码问题</h3>
-            <p>Python 2 名场面之：</p>
-            <b class="fragment">UnicodeDecodeError: 'ascii' codec can't decode byte 0xa0 in position 2818: ordinal
-                not in range(128)</b>
-        </section>
-        <section>
-            <h3>Python 2 的缺陷之: 语义的分歧</h3>
-            <p>给大家来个典型的例子，大家一起来玩猜一猜</p>
-            <ul>
-                <li class="fragment">range/xrange 的区别</li>
-                <li class="fragment">dict.items() 与 dict.iteritems() 的区别</li>
-                <li class="fragment">dict.keys() 与 dict.iterkeys() 的区别</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Python 2 的缺陷之: 内建系统设计不合理</h3>
-            <p>还是来个简单的例子</p>
-            <pre class="fragment"><code data-trim class="python">
+                <p class="fragment">好了，这段代码代表着什么含义</p>
+                <ul>
+                    <li class="fragment">A. 包含了”a”, “b”, “c”, 和 “d” 的字符串</li>
+                    <li class="fragment">B: 表示 97, 98, 99, 和 100 的字节数据</li>
+                </ul>
+                <p class="fragment">答案是，以上都可能</p>
+            </section>
+            <section>
+                <h3>Python 2 的缺陷之: 编码问题</h3>
+                <p>Python 2 名场面之：</p>
+                <b class="fragment">UnicodeDecodeError: 'ascii' codec can't decode byte 0xa0 in position 2818: ordinal
+                    not in range(128)</b>
+            </section>
+            <section>
+                <h3>Python 2 的缺陷之: 语义的分歧</h3>
+                <p>给大家来个典型的例子，大家一起来玩猜一猜</p>
+                <ul>
+                    <li class="fragment">range/xrange 的区别</li>
+                    <li class="fragment">dict.items() 与 dict.iteritems() 的区别</li>
+                    <li class="fragment">dict.keys() 与 dict.iterkeys() 的区别</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Python 2 的缺陷之: 内建系统设计不合理</h3>
+                <p>还是来个简单的例子</p>
+                <pre class="fragment"><code data-trim class="python">
 class Simple1Exception(Exception):
     pass
 
@@ -119,40 +119,40 @@ abc()
 
 
 					</code></pre>
-        </section>
-        <section>
-            <p>那么 Python 3 能给我们带来什么？</p>
-        </section>
-        <section>
-            <h3>Python 3 给我们带来了什么？</h3>
-            <ul>
-                <li class="fragment">统一的编码</li>
-                <li class="fragment">更严格的语义</li>
-                <li class="fragment">更合理的设计</li>
-                <li class="fragment">更多能提高生产效率的新特性</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Python 3 给我们带来了什么？：统一的编码</h3>
-            <ul>
-                <li class="fragment">对于字符串与二进制数据的严格的语义区分</li>
-                <li class="fragment">对于 Unicode 更好的支持</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Python 3 给我们带了什么？：更严格的语义</h3>
-            <p class="fragment">还是之前的例子</p>
-            <ul>
-                <li class="fragment">range/xrange 统一为 range</li>
-                <li class="fragment">dict.items() 与 dict.iteritems() 统一为 dict.items()</li>
-                <li class="fragment">dict.keys() 与 dict.iterkeys() 统一为 dict.keys()</li>
-                <li class="fragment">等等</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Python 3 给我们带了什么？：更良好的设计</h3>
-            <p class="fragment">还是之前异常的例子，在 Python 3 中，我们可以这样做</p>
-            <pre class="fragment"><code data-trim class="python">
+            </section>
+            <section>
+                <p>那么 Python 3 能给我们带来什么？</p>
+            </section>
+            <section>
+                <h3>Python 3 给我们带来了什么？</h3>
+                <ul>
+                    <li class="fragment">统一的编码</li>
+                    <li class="fragment">更严格的语义</li>
+                    <li class="fragment">更合理的设计</li>
+                    <li class="fragment">更多能提高生产效率的新特性</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Python 3 给我们带来了什么？：统一的编码</h3>
+                <ul>
+                    <li class="fragment">对于字符串与二进制数据的严格的语义区分</li>
+                    <li class="fragment">对于 Unicode 更好的支持</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Python 3 给我们带了什么？：更严格的语义</h3>
+                <p class="fragment">还是之前的例子</p>
+                <ul>
+                    <li class="fragment">range/xrange 统一为 range</li>
+                    <li class="fragment">dict.items() 与 dict.iteritems() 统一为 dict.items()</li>
+                    <li class="fragment">dict.keys() 与 dict.iterkeys() 统一为 dict.keys()</li>
+                    <li class="fragment">等等</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Python 3 给我们带了什么？：更良好的设计</h3>
+                <p class="fragment">还是之前异常的例子，在 Python 3 中，我们可以这样做</p>
+                <pre class="fragment"><code data-trim class="python">
 class Simple1Exception(Exception):
     pass
 
@@ -171,38 +171,38 @@ def abc():
 abc()
 
 				</code></pre>
-        </section>
-        <section>
-            <h3>Python 3 给我们带了什么？</h3>
-            <p>更多的，让我们能提升生产效率的新特性</p>
-        </section>
-        <section>
-            <h3>Python 3 新特性: PEP 484 类型标注</h3>
-        </section>
-        <section>
-            <h3>一个问题，Python 究竟是强类型语言 or 弱类型语言？</h3>
-        </section>
-        <section>
-            <h3>为了回答这个问题，我们先黑一下 js 吧</h3>
-            <h4>请问下面两段代码分别输出什么？</h4>
-            <div class="fragment">
-                <h4>JavaScript</h4>
-                <pre><code code data-trim class="javascript">
+            </section>
+            <section>
+                <h3>Python 3 给我们带了什么？</h3>
+                <p>更多的，让我们能提升生产效率的新特性</p>
+            </section>
+            <section>
+                <h3>Python 3 新特性: PEP 484 类型标注</h3>
+            </section>
+            <section>
+                <h3>一个问题，Python 究竟是强类型语言 or 弱类型语言？</h3>
+            </section>
+            <section>
+                <h3>为了回答这个问题，我们先黑一下 js 吧</h3>
+                <h4>请问下面两段代码分别输出什么？</h4>
+                <div class="fragment">
+                    <h4>JavaScript</h4>
+                    <pre><code code data-trim class="javascript">
 console.log("3"/2)
 						  </code></pre>
-            </div>
-            <div class="fragment">
-                <h4>Python</h4>
-                <pre><code code data-trim class="python">
+                </div>
+                <div class="fragment">
+                    <h4>Python</h4>
+                    <pre><code code data-trim class="python">
 print("3"/2)
 						</code></pre>
-            </div>
-        </section>
-        <section>
-            <p>好了，我们都知道 Python 是一门动态强类型语言。现在我们又来玩猜猜</p>
-            <div class="fragment">
-                <p>请猜出这段函数参数的类型</p>
-                <pre><code code data-trim class="python">
+                </div>
+            </section>
+            <section>
+                <p>好了，我们都知道 Python 是一门动态强类型语言。现在我们又来玩猜猜</p>
+                <div class="fragment">
+                    <p>请猜出这段函数参数的类型</p>
+                    <pre><code code data-trim class="python">
 class Flask:
     def run(self, host=None, port=None, debug=None,
             load_dotenv=True, **options):
@@ -254,13 +254,13 @@ class Flask:
             # without reloader and that stuff from an interactive shell.
             self._got_first_request = False
 						  </code></pre>
-            </div>
-        </section>
-        <section>
-            <h3>猜一猜 Part2</h3>
-            <div class="fragment">
-                <p>请猜一下这段代码的返回类型</p>
-                <pre><code code data-trim class="python">
+                </div>
+            </section>
+            <section>
+                <h3>猜一猜 Part2</h3>
+                <div class="fragment">
+                    <p>请猜一下这段代码的返回类型</p>
+                    <pre><code code data-trim class="python">
 class Flask:
     @locked_cached_property
     def name(self):
@@ -271,37 +271,37 @@ class Flask:
             return os.path.splitext(os.path.basename(fn))[0]
         return self.import_name
 						  </code></pre>
-            </div>
-        </section>
-        <section>
-            <h3>猜一猜 Part3</h3>
-            <div class="fragment">
-                <p>猜一猜这段代码是否正确</p>
-                <pre><code code data-trim class="python">
+                </div>
+            </section>
+            <section>
+                <h3>猜一猜 Part3</h3>
+                <div class="fragment">
+                    <p>猜一猜这段代码是否正确</p>
+                    <pre><code code data-trim class="python">
 def return_callback(flag, callback):
     if not flag:
         return None
     return callback(1, 2)
 						</code></pre>
-            </div>
-        </section>
-        <section>
-            <h3>我们发现了什么问题？</h3>
-            <div class="fragment">
+                </div>
+            </section>
+            <section>
+                <h3>我们发现了什么问题？</h3>
+                <div class="fragment">
+                    <ul>
+                        <li class="fragment">在没有明确的标识情况下，对于我们阅读代码造成一定障碍。只能靠变量名猜类型</li>
+                        <li class="fragment">对于 callback 或者其余更多相对复杂的情况下，容易出现调用错误</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>怎么解决</h3>
                 <ul>
-                    <li class="fragment">在没有明确的标识情况下，对于我们阅读代码造成一定障碍。只能靠变量名猜类型</li>
-                    <li class="fragment">对于 callback 或者其余更多相对复杂的情况下，容易出现调用错误</li>
+                    <li class="fragment">写好注释，写好 Docstring</li>
                 </ul>
-            </div>
-        </section>
-        <section>
-            <h3>怎么解决</h3>
-            <ul>
-                <li class="fragment">写好注释，写好 Docstring</li>
-            </ul>
-            <div class="fragment">
-                <p>比如</p>
-                <pre><code code data-trim class="python">
+                <div class="fragment">
+                    <p>比如</p>
+                    <pre><code code data-trim class="python">
 class Flask:
     def run(self, host=None, port=None, debug=None,
             load_dotenv=True, **options):
@@ -362,45 +362,45 @@ class Flask:
             # without reloader and that stuff from an interactive shell.
             self._got_first_request = False
 							</code></pre>
-            </div>
-        </section>
-        <section>
-            <h3>但是</h3>
-            <h3 class="fragment">想象很美好</h3>
-        </section>
-        <section>
-            <h3>技术最讨厌的四件事</h3>
-            <ul>
-                <li class="fragment">自己写文档</li>
-                <li class="fragment">自己写注释</li>
-                <li class="fragment">别人不写文档</li>
-                <li class="fragment">别人不写注释</li>
-            </ul>
-        </section>
-        <section>
-            <h3>人生导师窃格瓦拉告诉我们</h3>
-            <img src="https://user-images.githubusercontent.com/7054676/41188793-888dc5f6-6bf5-11e8-8026-e25e84a47f4e.gif"
-                 alt="qiegewala">
-        </section>
-        <section>
-            <h3>So
-                <div class="fragment">A better way please?</div>
-            </h3>
-        </section>
-        <section><a href="https://www.python.org/dev/peps/pep-0484">PEP 484 拯救我们</a></section>
-        <section>
-            <h3>它是什么？</h3>
-            <ul>
-                <li class="fragment">Python 3.5以后所支持的一种新特性</li>
-                <li class="fragment">通过在关键位置增加类型标注来提升代码的可阅读性以及可维护性</li>
-                <li class="fragment">支持复杂类型的标注</li>
-                <li class="fragment">支持第三方工具的静态检查</li>
-                <li class="fragment">提供了接口，可以自行实现运行时检查</li>
-            </ul>
-        </section>
-        <section>
-            <h3>我们来改一下之前的例子：</h3>
-            <pre><code code data-trim class="python">
+                </div>
+            </section>
+            <section>
+                <h3>但是</h3>
+                <h3 class="fragment">想象很美好</h3>
+            </section>
+            <section>
+                <h3>技术最讨厌的四件事</h3>
+                <ul>
+                    <li class="fragment">自己写文档</li>
+                    <li class="fragment">自己写注释</li>
+                    <li class="fragment">别人不写文档</li>
+                    <li class="fragment">别人不写注释</li>
+                </ul>
+            </section>
+            <section>
+                <h3>人生导师窃格瓦拉告诉我们</h3>
+                <img src="https://user-images.githubusercontent.com/7054676/41188793-888dc5f6-6bf5-11e8-8026-e25e84a47f4e.gif"
+                    alt="qiegewala">
+            </section>
+            <section>
+                <h3>So
+                    <div class="fragment">A better way please?</div>
+                </h3>
+            </section>
+            <section><a href="https://www.python.org/dev/peps/pep-0484">PEP 484 拯救我们</a></section>
+            <section>
+                <h3>它是什么？</h3>
+                <ul>
+                    <li class="fragment">Python 3.5以后所支持的一种新特性</li>
+                    <li class="fragment">通过在关键位置增加类型标注来提升代码的可阅读性以及可维护性</li>
+                    <li class="fragment">支持复杂类型的标注</li>
+                    <li class="fragment">支持第三方工具的静态检查</li>
+                    <li class="fragment">提供了接口，可以自行实现运行时检查</li>
+                </ul>
+            </section>
+            <section>
+                <h3>我们来改一下之前的例子：</h3>
+                <pre><code code data-trim class="python">
 class Flask:
     def run(self, host: str = None, port: int = None, debug: str = None,
             load_dotenv: str = True, **options):
@@ -453,17 +453,17 @@ class Flask:
             self._got_first_request = False
 
 						</code></pre>
-        </section>
-        <section>
-            <h3>Python 3 新特性之：PEP 518</h3>
-        </section>
-        <section>
-            <h3>先问一个问题，如果我想发布一个包怎么办？</h3>
-        </section>
-        <section>
-            <p>当然是写 setup.py 啦！</p>
-            <p class="fragment">然后</p>
-            <pre class="fragment"><code data-trim class="python">
+            </section>
+            <section>
+                <h3>Python 3 新特性之：PEP 518</h3>
+            </section>
+            <section>
+                <h3>先问一个问题，如果我想发布一个包怎么办？</h3>
+            </section>
+            <section>
+                <p>当然是写 setup.py 啦！</p>
+                <p class="fragment">然后</p>
+                <pre class="fragment"><code data-trim class="python">
 import codecs
 import os
 from setuptools import setup
@@ -513,17 +513,17 @@ setup(
 )
 
 			</code></pre>
-        </section>
-        <section>
-            <p>哇，这么写太复杂了怎么办？</p>
-            <p class="fragment">当然是</p>
-            <p class="fragment">选择</p>
-            <p class="fragment"><s style="color: green;">原谅它</s>，放弃它啦</p>
-        </section>
-        <section>
-            <p> PEP 518 给我们带来一种全新的项目结构描述的方式</p>
-            <p class="fragment">我们来看个例子</p>
-            <pre class="fragment"><code data-trim class="toml">
+            </section>
+            <section>
+                <p>哇，这么写太复杂了怎么办？</p>
+                <p class="fragment">当然是</p>
+                <p class="fragment">选择</p>
+                <p class="fragment"><s style="color: green;">原谅它</s>，放弃它啦</p>
+            </section>
+            <section>
+                <p> PEP 518 给我们带来一种全新的项目结构描述的方式</p>
+                <p class="fragment">我们来看个例子</p>
+                <pre class="fragment"><code data-trim class="toml">
 [tool.poetry]
 name = "iredis"
 version = "0.3.0"
@@ -582,40 +582,40 @@ iredis = 'iredis.entry:main'
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 			</code></pre>
-        </section>
-        <section>
-            <p>当然 Python 3 还给我们提供了许许多多能够提升生产力的改进</p>
-            <ul>
-                <li class="fragment">PEP 492 asyncio</li>
-                <li class="fragment">PEP 380 yield from</li>
-                <li class="fragment">GIL 的优化</li>
-                <li class="fragment">字典性能的提升</li>
-                <li class="fragment">等等</li>
-            </ul>
-        </section>
-        <section>
-            <h3>那么 Python 完善了么？</h3>
-        </section>
-        <section>
-            <h3>没有</h3>
-        </section>
-        <section>
-            <h3>我们需要什么？</h3>
-            <ul>
-                <li class="fragment">良好的性能</li>
-                <li class="fragment">方便的调试工具</li>
-                <li class="fragment">良好的可维护性</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Python 的缺陷：性能</h3>
-            <img src="https://user-images.githubusercontent.com/7054676/67596905-6b612c00-f79c-11e9-8ca0-068875a2ad0b.png"
-                 class="fragment">
-        </section>
-        <section>
-            <h3>Python 的缺陷：框架的治理</h3>
-            <p class="fragment">先看一段代码</p>
-            <pre class="fragment"><code data-trim class="python">
+            </section>
+            <section>
+                <p>当然 Python 3 还给我们提供了许许多多能够提升生产力的改进</p>
+                <ul>
+                    <li class="fragment">PEP 492 asyncio</li>
+                    <li class="fragment">PEP 380 yield from</li>
+                    <li class="fragment">GIL 的优化</li>
+                    <li class="fragment">字典性能的提升</li>
+                    <li class="fragment">等等</li>
+                </ul>
+            </section>
+            <section>
+                <h3>那么 Python 完善了么？</h3>
+            </section>
+            <section>
+                <h3>没有</h3>
+            </section>
+            <section>
+                <h3>我们需要什么？</h3>
+                <ul>
+                    <li class="fragment">良好的性能</li>
+                    <li class="fragment">方便的调试工具</li>
+                    <li class="fragment">良好的可维护性</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Python 的缺陷：性能</h3>
+                <img src="https://user-images.githubusercontent.com/7054676/67596905-6b612c00-f79c-11e9-8ca0-068875a2ad0b.png"
+                    class="fragment">
+            </section>
+            <section>
+                <h3>Python 的缺陷：框架的治理</h3>
+                <p class="fragment">先看一段代码</p>
+                <pre class="fragment"><code data-trim class="python">
 import functools
 import types
 
@@ -649,55 +649,55 @@ class Demo(metaclass=DemoMeta):
 print(Demo().abc())
 
 			</code></pre>
-        </section>
-        <section>
-            <p>当你问他为什么会写这样的代码的时候，他告诉你</p>
-        </section>
-        <section>
-            <img src="./images/fluent_python.jpg">
-        </section>
-        <section>
-            <img src="./images/python_cookbook.jpg">
-        </section>
-        <section>
-            <h3>Finally</h3>
-            <img src="https://user-images.githubusercontent.com/7054676/41169344-47229c56-6b7b-11e8-8ce3-b67bb82186b0.png"
-                 alt="Python">
-        </section>
-        <section>
-            <h1 style="font-style: italic; font-family: 'IM FELL English';">Thanks!</h1>
-            <h2 style="font-style: italic; font-family: 'IM FELL English';">Q&amp;A</h2>
-        </section>
+            </section>
+            <section>
+                <p>当你问他为什么会写这样的代码的时候，他告诉你</p>
+            </section>
+            <section>
+                <img src="./images/fluent_python.jpg">
+            </section>
+            <section>
+                <img src="./images/python_cookbook.jpg">
+            </section>
+            <section>
+                <h3>Finally</h3>
+                <img src="https://user-images.githubusercontent.com/7054676/41169344-47229c56-6b7b-11e8-8ce3-b67bb82186b0.png"
+                    alt="Python">
+            </section>
+            <section>
+                <h1 style="font-style: italic; font-family: 'IM FELL English';">Thanks!</h1>
+                <h2 style="font-style: italic; font-family: 'IM FELL English';">Q&amp;A</h2>
+            </section>
+        </div>
     </div>
-</div>
 
-<script src="js/reveal.js"></script>
+    <script src="js/reveal.js"></script>
 
-<script>
-    // More info about config & dependencies:
-    // - https://github.com/hakimel/reveal.js#configuration
-    // - https://github.com/hakimel/reveal.js#dependencies
-    Reveal.initialize({
-        dependencies: [{
-            src: 'plugin/markdown/marked.js'
-        },
-            {
-                src: 'plugin/markdown/markdown.js'
-            },
-            {
-                src: 'plugin/notes/notes.js',
-                async: true
-            },
-            {
-                src: 'plugin/highlight/highlight.js',
-                async: true
-            }
-        ],
-        mouseWheel: true,
-        slideNumber: "c/t",
-        progress: true,
-    });
-</script>
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true
+                }
+            ],
+            mouseWheel: true,
+            slideNumber: "c/t",
+            progress: true,
+        });
+    </script>
 </body>
 
 </html>
